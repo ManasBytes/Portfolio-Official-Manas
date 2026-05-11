@@ -1,0 +1,173 @@
+{
+  "profile": {
+    "name": "Manas Ranjan Sahoo",
+    "title": "Full Stack Developer",
+    "phone": "+91-9439411882",
+    "email": "manas@example.com",
+    "location": "Chennai, India",
+    "description": "B.S. Data Science student at IIT Madras with hands-on experience in building full-stack web applications. Passionate about creating impactful digital solutions using React, Flask, and modern web technologies.",
+    "image": "",
+    "resumeUrl": "#"
+  },
+  "socials": [
+    {
+      "platform": "GitHub",
+      "url": "https://github.com/"
+    },
+    {
+      "platform": "LinkedIn",
+      "url": "https://linkedin.com/"
+    },
+    {
+      "platform": "Twitter",
+      "url": "https://twitter.com/"
+    }
+  ],
+  "skills": [
+    {
+      "category": "Languages",
+      "items": [
+        "JavaScript",
+        "Python",
+        "TypeScript",
+        "C++",
+        "HTML",
+        "CSS",
+        "SQL"
+      ]
+    },
+    {
+      "category": "Frameworks",
+      "items": [
+        "React",
+        "Next.js",
+        "Flask"
+      ]
+    },
+    {
+      "category": "Libraries",
+      "items": [
+        "TailwindCSS",
+        "Locomotive.js",
+        "GSAP",
+        "SQLAlchemy",
+        "Requests"
+      ]
+    },
+    {
+      "category": "Database & Tools",
+      "items": [
+        "PostgreSQL",
+        "MySQL",
+        "SQLite",
+        "Git"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "id": "1",
+      "role": "Cultural Events Lead & Coordinator",
+      "company": "Indian Institute of Technology Madras",
+      "location": "Chennai, India",
+      "duration": "2024 - 2028",
+      "points": [
+        "Led and managed a 15-member volunteer team across 15 cultural events, coordinating logistics, scheduling, and execution while working simultaneously with over 4 departments to ensure smooth delivery for 100+ attendees per event.",
+        "Owned sponsorship operations and resource allocation for all events, negotiating and managing 1.5 lakh INR in budgets and at least 2 lakh INR worth of sponsorship deliverables.",
+        "Acted as the Point of Contact (POC) between the Culturals Department and the Talent Hunt event, contributing to the evaluation of 80+ submissions during Margazhi."
+      ]
+    },
+    {
+      "id": "2",
+      "role": "Full Stack Intern",
+      "company": "RangYatra",
+      "location": "Lucknow, India",
+      "duration": "Jul 2025 - Present",
+      "points": [
+        "Working as a Full-Stack Intern building their first end-to-end web presence with a thematically dramatic, performance-oriented frontend to showcase plays, artists, and social work.",
+        "Designing and developing the full-stack architecture using React (frontend) and Flask + MySQL (backend) to manage structured archival data, media, and content."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "id": "1",
+      "degree": "Bachelor of Science (B.S.) - Data Science and Applications",
+      "institution": "Indian Institute of Technology Madras",
+      "location": "Chennai, India",
+      "duration": "2024 - 2028",
+      "grade": ""
+    },
+    {
+      "id": "2",
+      "degree": "Senior School (XII)",
+      "institution": "Guru Nanak Public School",
+      "location": "Rourkela, India",
+      "duration": "2022 - 2023",
+      "grade": "CGPA: 9.12"
+    },
+    {
+      "id": "3",
+      "degree": "Secondary School (X)",
+      "institution": "Gyanajyoti Public School",
+      "location": "Rourkela, India",
+      "duration": "2022 - 2023",
+      "grade": "CGPA: 10"
+    },
+    {
+      "id": "4",
+      "degree": "Frontend Domination",
+      "institution": "Sheriyans Coding School",
+      "location": "Online",
+      "duration": "Jan - Jun 2025",
+      "grade": ""
+    }
+  ],
+  "projects": [
+    {
+      "id": "1",
+      "title": "YatriRakshak",
+      "description": "A tourist safety platform shortlisted in the Top 50 teams at the IIT Madras internal hackathon for SIH.",
+      "points": [
+        "Led a 6-member team to build YatriRakshak, a comprehensive tourist safety platform.",
+        "Implemented PNR-based trip tracking, geo-fenced restricted zones, police dashboard management, and real-time zone violation alerts.",
+        "Developed SOS activation, live location sharing, medical detail alerts, in-app FIR registration, and police monitoring."
+      ],
+      "techStack": [
+        "React",
+        "Flask",
+        "PostgreSQL",
+        "Python"
+      ],
+      "image": "",
+      "liveUrl": "",
+      "githubUrl": ""
+    },
+    {
+      "id": "2",
+      "title": "ParkSync",
+      "description": "A Flask-based parking management system with role-based user and admin panels.",
+      "points": [
+        "Built a comprehensive parking management system with role-based user and admin panels.",
+        "Enabled slot booking, dynamic hourly pricing, and full CRUD control over parking lots.",
+        "Implemented using Flask with HTML and Jinja templates for the frontend."
+      ],
+      "techStack": [
+        "Flask",
+        "Python",
+        "HTML",
+        "SQLite"
+      ],
+      "image": "",
+      "liveUrl": "",
+      "githubUrl": ""
+    }
+  ],
+  "achievements": [],
+  "softSkills": [
+    "Communication",
+    "Team-Building",
+    "Collaborating",
+    "Problem-Solving"
+  ]
+}

@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+:root {
+  --background: #000000;
+  --foreground: #ededed;
+  --cell-count: 15;
+  --cell-size: calc(100vw / var(--cell-count));
+}
+
+@media (max-width: 640px) {
+  :root {
+    --cell-count: 5;
+    --cell-size: calc(100vw / var(--cell-count));
+  }
+}
+
+body {
+  background: #000000;
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+/* ─── Smooth scrolling ─── */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ─── Custom scrollbar ─── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #3f3f46; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #52525b; }
+
+/* ─── Selection ─── */
+::selection {
+  background-color: rgba(168, 85, 247, 0.3);
+  color: white;
+}
+
+/* ─── Grid background ─── */
+.bg-grid {
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-grid::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: var(--cell-size) var(--cell-size);
+  z-index: 0;
+  mask-image: radial-gradient(circle, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 100%);
+  -webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 100%);
+}
+
+.grid-highlight {
+  position: absolute;
+  width: var(--cell-size);
+  height: var(--cell-size);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0));
+  z-index: 1;
+}
+.grid-highlight:nth-child(1) { top: calc(6 * var(--cell-size)); left: calc(6 * var(--cell-size)); }
+.grid-highlight:nth-child(2) { top: calc(1 * var(--cell-size)); left: calc(4 * var(--cell-size)); }
+.grid-highlight:nth-child(3) { top: calc(0 * var(--cell-size)); left: calc(10 * var(--cell-size)); }
+.grid-highlight:nth-child(4) { top: calc(3 * var(--cell-size)); left: calc(12 * var(--cell-size)); }
+.grid-highlight:nth-child(5) { top: calc(3 * var(--cell-size)); left: calc(2 * var(--cell-size)); }
+
+/* ─── Stars ─── */
+.stars {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.star {
+  position: absolute;
+  border-radius: 50%;
+  background: white;
+  animation: twinkle 3s infinite ease-in-out alternate;
+}
+.star:nth-child(2n) { animation-duration: 5s; }
+.star:nth-child(3n) { animation-duration: 6s; }
+.star:nth-child(4n) { animation-duration: 7s; }
+
+@keyframes twinkle {
+  0%   { opacity: 0.2; }
+  50%  { opacity: 1; }
+  100% { opacity: 0.2; }
+}
+
+/* ─── Gradient text animation ─── */
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 3s ease infinite;
+}
+
+/* ─── Shake ─── */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-4px); }
+  20%, 40%, 60%, 80% { transform: translateX(4px); }
+}
+.animate-shake { animation: shake 0.5s ease-in-out; }
