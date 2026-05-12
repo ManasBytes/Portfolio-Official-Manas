@@ -6,21 +6,21 @@
     "email": "manas@example.com",
     "location": "Chennai, India",
     "description": "B.S. Data Science student at IIT Madras with hands-on experience in building full-stack web applications. Passionate about creating impactful digital solutions using React, Flask, and modern web technologies.",
-    "image": "",
-    "resumeUrl": "#"
+    "image": "/my_image/1.avif",
+    "resumeUrl": "https://drive.google.com/file/d/1VgiUBq5ge2l_ollXo8sxvXrCXYsfOAj0/view?usp=sharing"
   },
   "socials": [
     {
       "platform": "GitHub",
-      "url": "https://github.com/"
+      "url": "https://github.com/manasbytes"
     },
     {
       "platform": "LinkedIn",
-      "url": "https://linkedin.com/"
+      "url": "https://linkedin.com/in/manasbytes"
     },
     {
-      "platform": "Twitter",
-      "url": "https://twitter.com/"
+      "platform": "Instagram",
+      "url": "https://www.instagram.com/the_lostperson_494/"
     }
   ],
   "skills": [
