@@ -11,8 +11,7 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "Server error" }, { status: 500 });
     }
 
-    const hashed = await bcrypt.hash(adminPassword, 10);
-    const valid = await bcrypt.compare(password, hashed);
+    const valid = await bcrypt.compare(password, adminPassword);
 
     if (!valid) {
       return NextResponse.json({ error: "Invalid password" }, { status: 401 });

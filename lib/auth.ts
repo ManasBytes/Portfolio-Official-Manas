@@ -1,8 +1,9 @@
 import { SignJWT, jwtVerify } from "jose";
 
-const secret = new TextEncoder().encode(
-  process.env.JWT_SECRET || "fallback-secret"
-);
+if (!process.env.JWT_SECRET) {
+  throw new Error("JWT_SECRET environment variable is not set");
+}
+const secret = new TextEncoder().encode(process.env.JWT_SECRET);
 
 export async function signToken() {
   return new SignJWT({ role: "admin" })
